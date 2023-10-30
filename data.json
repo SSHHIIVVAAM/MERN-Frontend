@@ -2411,27 +2411,6 @@
       "quantity": 1,
       "user": 2,
       "id": 1
-    },
-    {
-      "id": 2,
-      "title": "iPhone X",
-      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-      "price": 1111,
-      "discountPercentage": 17.94,
-      "rating": 0,
-      "stock": 34,
-      "brand": "Apple",
-      "category": "smartphones",
-      "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/2/1.jpg",
-        "https://i.dummyjson.com/data/products/2/2.jpg",
-        "https://i.dummyjson.com/data/products/2/3.jpg",
-        "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
-      ],
-      "deleted": true,
-      "quantity": 1,
-      "user": 4
     }
   ],
   "orders": [
@@ -2630,6 +2609,61 @@
       },
       "status": "cancelled",
       "id": 3
+    },
+    {
+      "items": [
+        {
+          "id": 2,
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 1111,
+          "discountPercentage": 17.94,
+          "rating": 0,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "deleted": true,
+          "quantity": 1,
+          "user": 4
+        }
+      ],
+      "totalAmount": 1111,
+      "totalItems": 1,
+      "user": {
+        "email": "user1@gmail.com",
+        "password": "mrRajput001",
+        "addresses": [
+          {
+            "name": "Shivam",
+            "email": "shivam00@gmail.com",
+            "phone": "9877522146",
+            "street": "sjhuighiad",
+            "city": "bjhasj",
+            "state": "kjhbjhfash",
+            "pinCode": "jhgjfdsa"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "card",
+      "selectedAddress": {
+        "name": "Shivam",
+        "email": "shivam00@gmail.com",
+        "phone": "9877522146",
+        "street": "sjhuighiad",
+        "city": "bjhasj",
+        "state": "kjhbjhfash",
+        "pinCode": "jhgjfdsa"
+      },
+      "status": "pending",
+      "id": 4
     }
   ]
 }
