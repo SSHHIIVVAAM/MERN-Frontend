@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1,
-      "title": "iPhone 9",
+      "title": "iPhone 9 ",
       "description": "An apple mobile which is nothing like apple",
       "price": 993,
       "discountPercentage": 12.96,
@@ -161,7 +161,8 @@
         "https://i.dummyjson.com/data/products/9/3.png",
         "https://i.dummyjson.com/data/products/9/4.jpg",
         "https://i.dummyjson.com/data/products/9/thumbnail.jpg"
-      ]
+      ],
+      "deleted": true
     },
     {
       "id": 10,
@@ -2354,27 +2355,6 @@
   ],
   "users": [
     {
-      "email": "test@gmail.com",
-      "password": "Qwerty123",
-      "role": "user",
-      "addresses": [],
-      "id": 1
-    },
-    {
-      "email": "demo@gmail.com",
-      "password": "Qwerty123",
-      "role": "user",
-      "addresses": [],
-      "id": 2
-    },
-    {
-      "email": "admin@gmail.com",
-      "password": "Qwerty123",
-      "addresses": [],
-      "role": "admin",
-      "id": 3
-    },
-    {
       "email": "user1@gmail.com",
       "password": "mrRajput001",
       "addresses": [
@@ -2398,6 +2378,13 @@
         }
       ],
       "id": 4
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "mrRajput@001",
+      "addresses": [],
+      "role": "admin",
+      "id": 5
     }
   ],
   "cart": [
