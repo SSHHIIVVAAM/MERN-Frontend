@@ -1,11 +1,14 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { fetchLoggedInUserOrders, updateUser, fetchLoggedInUser } from './userAPI';
+import {
+  fetchLoggedInUserOrders,
+  updateUser,
+  fetchLoggedInUser,
+} from './userAPI';
 
 const initialState = {
   userOrders: [],
   status: "idle",
-  userInfo: null, // this info will be used in case of detailed user info, while auth will 
-  // only be used for loggedInUser id etc checks
+  userInfo: null, // this info will be used in case of detailed user info, while auth will
 };
 
 export const fetchLoggedInUserOrderAsync = createAsyncThunk(
@@ -39,9 +42,7 @@ export const userSlice = createSlice({
   name: "user",
   initialState,
   reducers: {
-    increment: (state) => {
-      state.value += 1;
-    },
+   
   },
   extraReducers: (builder) => {
     builder
@@ -72,8 +73,8 @@ export const userSlice = createSlice({
 });
 
 export const selectUserOrders = (state) => state.user.userOrders;
-export const selectUserInfo = (state)=>state.user.userInfo;
+export const selectUserInfo = (state) => state.user.userInfo;
 
-export const { increment } = userSlice.actions;
+// export const { increment } = userSlice.actions;
 
 export default userSlice.reducer;

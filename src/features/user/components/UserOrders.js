@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import {
-  fetchLoggedInUserOrderAsync,
-  selectUserInfo,
-  selectUserOrders,
-} from "../userSlice";
+    fetchLoggedInUserOrderAsync,
+    selectUserInfo,
+    selectUserOrders,
+  } from '../userSlice';
 
 export default function UserOrders() {
   const dispatch = useDispatch();
@@ -15,7 +15,7 @@ export default function UserOrders() {
     if (user) {
       dispatch(fetchLoggedInUserOrderAsync(user.id));
     }
-  }, [user]);
+}, [dispatch, user]);
 
   return (
     <div>
@@ -31,7 +31,7 @@ export default function UserOrders() {
                   Order Status : {order.status}
                 </h3>
                 <div className="flow-root">
-                  <ul role="list" className="-my-6 divide-y divide-gray-200">
+                <ul className="-my-6 divide-y divide-gray-200">
                     {order.items.map((item) => (
                       <li key={item.id} className="flex py-6">
                         <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">

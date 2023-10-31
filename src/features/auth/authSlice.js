@@ -5,7 +5,7 @@ import { updateUser } from '../user/userAPI';
 const initialState = {
   loggedInUser: null,
   status: 'idle',
-  error:null
+  error: null,
 };
 export const createUserAsync = createAsyncThunk(
   'user/createUser',
@@ -44,13 +44,10 @@ export const signOutAsync = createAsyncThunk(
   }
 );
 
-export const counterSlice = createSlice({
+export const authSlice = createSlice({
   name: 'user',
   initialState,
   reducers: {
-    increment: (state) => {
-      state.value += 1;
-    },
   },
   extraReducers: (builder) => {
     builder
@@ -90,7 +87,9 @@ export const counterSlice = createSlice({
   },
 });
 
-export const selectLoggedInUser = (state)=>state.auth.loggedInUser;
-export const selectError = (state)=>state.auth.error;
-export const { increment } = counterSlice.actions;
-export default counterSlice.reducer;
+export const selectLoggedInUser = (state) => state.auth.loggedInUser;
+export const selectError = (state) => state.auth.error;
+
+// export const { } = authSlice.actions;
+
+export default authSlice.reducer;
